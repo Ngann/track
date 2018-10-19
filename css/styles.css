@@ -11,9 +11,12 @@
 #story {
   display: none;
 }
+#other {
+  display: none;
+}
 
 body {
-  background-color: #f7efe2;
+  background-color: #c9d1c8;
 }
 
 
@@ -31,7 +34,7 @@ body {
 .col-md-4 {
   border: 1px solid black;
   padding: 30px;
-  background-color: #b8d20b;
+  background-color: #ffccac;
   text-align: center;
 }
 
