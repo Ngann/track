@@ -7,13 +7,15 @@
 #ff0038 magenta
 #b8d20b lettuce */
 
+
+/* #story {
+  display: none;
+} */
+
 body {
   background-color: #f7efe2;
 }
 
-#story {
-  display: none;
-}
 
 .bucket {
   margin: 30px;
