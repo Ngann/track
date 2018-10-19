@@ -15,9 +15,13 @@ body {
   display: none;
 }
 
+.bucket {
+  margin: 30px;
+}
+
 .row {
-  margin:5px;
-  border: 1px solid #c5001a;
+  /* margin:10px; */
+  /* border: 1px solid #c5001a; */
   padding: 10px
   background-color: #ffccac;
 }
@@ -27,4 +31,8 @@ body {
   padding: 30px;
   background-color: #b8d20b;
   text-align: center;
+}
+
+.survey {
+  margin: 30px;
 }

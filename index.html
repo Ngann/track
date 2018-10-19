@@ -9,54 +9,87 @@
   </head>
   <body>
     <div class="container">
-      <h1>Which Track Should You Learn?</h1>
+      <h1>What’s the Best Programming Language and Track to Learn for You?</h1>
       <p>Click on the below tracks for more information</p>
       <!--click on link to see pop up of description for each and what it is used for.-->
-      <div class="row">
-        <div class="col-md-4">
-          <h3>Ruby/Rail</h3>
+      <div class="bucket">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Ruby/Rail</h3>
+          </div>
+          <div class="col-md-4">
+            <h3>PHP/Drupa</h3>
+          </div>
+          <div class="col-md-4">
+            <h3>Java/Android</h3>
+          </div>
         </div>
-        <div class="col-md-4">
-          <h3>PHP/Drupa</h3>
-        </div>
-        <div class="col-md-4">
-          <h3>Java/Android</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <h3>CSS/Design</h3>
-        </div>
-        <div class="col-md-4">
-          <h3>C#/.NET</h3>
-        </div>
-        <div class="col-md-4">
-          <h3>Ruby/React</h3>
+        <div class="row">
+          <div class="col-md-4">
+            <h3>CSS/Design</h3>
+          </div>
+          <div class="col-md-4">
+            <h3>C#/.NET</h3>
+          </div>
+          <div class="col-md-4">
+            <h3>Ruby/React</h3>
+          </div>
         </div>
       </div>
 
+      <div class="survey">
+        <h3>Take this survey to see which track will work for you!</h3>
+        <form id="formOne">
+          <!--remove id=name before submitting-->
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" class="form-control" type="text">
+          </div>
 
-      <form id="formOne">
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input id="name" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input id="name" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input id="name" class="form-control" type="text">
-        </div>
+          <div class="form-group">
+            <label for="challenge">Do you enjoy a challenge?</label>
+            <select class="form-control" id="challenge">
+              <option value="1">Bring it On!</option>
+              <option value="2">I don't have time for that..</option>
+              <option value="3">I like everyting medium difficulty</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="culture">Which company do you want to work for?</label>
+            <select class="form-control" id="culture">
+              <option value="1">Bring it On!</option>
+              <option value="2">I don't have time for that..</option>
+              <option value="3">I like everyting medium difficulty</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="projects">Which of these projects inspires you?</label>
+            <select class="form-control" id="projects">
+              <option value="1">Bring it On!</option>
+              <option value="2">I don't have time for that..</option>
+              <option value="3">I like everyting medium difficulty</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="location">Where do you want to live?</label>
+            <select class="form-control" id="location">
+              <option value="1">Bring it On!</option>
+              <option value="2">I don't have time for that..</option>
+              <option value="3">I like everyting medium difficulty</option>
+            </select>
+          </div>
 
           <button type="Submit" class="btn btn-info">Track Suggester</button>
-      </form>
+        </form>
+      </div>
 
       <div id="story">
         <p>Hello <span class="name"></span>,</p>
-        <p>Hello <span class="name"></span>,</p>
-        <p>Hello <span class="name"></span>,</p>
+
+
       </div>
     </div>
   </body>
