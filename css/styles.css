@@ -11,6 +11,20 @@ body {
   background-color: #f7efe2;
 }
 
-/* img {
+#story {
   display: none;
-} */
+}
+
+.row {
+  margin:5px;
+  border: 1px solid #c5001a;
+  padding: 10px
+  background-color: #ffccac;
+}
+
+.col-md-4 {
+  border: 1px solid black;
+  padding: 30px;
+  background-color: #b8d20b;
+  text-align: center;
+}
