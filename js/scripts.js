@@ -1,13 +1,13 @@
-$(document).ready(function(){
-  $("form#form-track").sumbit(function(event){
+$(document).ready(function() {
+  $("#formOne").submit(function(event) {
+    var nameInput = $("input#name").val();
 
+    $(".name").append(nameInput);
+
+    $("#story").show();
+    event.preventDefault();
   });
-
-
-// alert('hello');
-  event.preventDefault();
 });
-
 
 // Available Tracks
 // Ruby/Rails
