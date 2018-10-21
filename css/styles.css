@@ -24,6 +24,9 @@ body {
   margin: 30px;
 }
 
+.bucket p {
+  display: none;
+}
 .row {
   /* margin:10px; */
   /* border: 1px solid #c5001a; */
@@ -40,4 +43,8 @@ body {
 
 .survey {
   margin: 30px;
+}
+
+.flashcard-clicked {
+  background-color: gray;
 }

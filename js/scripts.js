@@ -1,4 +1,9 @@
 $(document).ready(function() {
+    $(".col-md-4").click(function() {
+      $(this).children("h3").toggle();
+      $(this).children("p").toggle();
+    });
+
   $("#formOne").submit(function(event) {
     // var nameInput = $("input#name").val();
     var challengeInput = parseInt($("#challenge").val());
