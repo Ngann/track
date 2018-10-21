@@ -1,8 +1,14 @@
 $(document).ready(function() {
-    $(".flash").click(function() {
+  $(".flash").click(function() {
       $(this).children("h3").toggle();
       $(this).children("p").toggle();
-    });
+  });
+
+  // (".bucket#btn").click(function() {
+  //     $(".bucket").hide();
+  //     $(".survey").show();
+  // });
+
 
   $("#formOne").submit(function(event) {
     // var nameInput = $("input#name").val();
@@ -11,6 +17,10 @@ $(document).ready(function() {
     var projectsInput = parseInt($("#projects").val());
     var locationInput = parseInt($("#location").val());
     var total = challengeInput+cultureInput+projectsInput+locationInput
+    var resultOne = "Ruby/Rails and PHP/Drupal"
+    var resultTwo = "PHP/Drupal and Java/Android"
+    var resultThree = "Java/Android and C#/.NET"
+    var resultFour = "CSS/Design and Ruby/Rails"
 
     // $(".name").append(nameInput);
     // $(".challenge").append(challengeInput);
@@ -26,13 +36,16 @@ $(document).ready(function() {
        // $(".trackResult").append("Sorry, we don't think you would enjoy a career in coding");
        $('#other').show();
     } else if (total < 5) {
-      $(".trackResult").append("Ruby");
+      $(".trackResult").append(resultOne);
       $("#story").show()
     } else if (total < 7) {
-      $(".trackResult").append("Java");
+      $(".trackResult").append(resultTwo);
+      $("#story").show()
+    } else if (total < 10) {
+      $(".trackResult").append(resultThree);
       $("#story").show()
     } else if (total > 10) {
-      $(".trackResult").append("Python");
+      $(".trackResult").append(resultFour);
       $("#story").show()
     } else {
       //else what? //

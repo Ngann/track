@@ -10,13 +10,16 @@
 
 #story {
   display: none;
+  border: 2px solid #e6df44;
+  padding: 30px;
 }
 #other {
   display: none;
 }
 
 body {
-  background-color: #c9d1c8;
+  /* background-color: #c9d1c8; */
+  margin: 40px;
 }
 
 
@@ -31,20 +34,21 @@ body {
   /* margin:10px; */
   /* border: 1px solid #c5001a; */
   padding: 10px
-  background-color: #ffccac;
+  background-color: #e6df44;
 }
 
 .col-md-4 {
   border: 1px solid black;
   padding: 30px;
-  background-color: #ffccac;
+  background-color: #e6df44;
   text-align: center;
 }
 
 .survey {
+  display: show;
   margin: 30px;
 }
 
-.flashcard-clicked {
-  background-color: gray;
-}
+/* #formOne {
+  display: none;
+} */
