@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $(".col-md-4").click(function() {
+    $(".flash").click(function() {
       $(this).children("h3").toggle();
       $(this).children("p").toggle();
     });
