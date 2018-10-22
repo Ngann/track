@@ -6,12 +6,13 @@
 #c5001a engine red
 #ff0038 magenta
 #b8d20b lettuce */
-
-
-#story {
+.container {
+  text-align: center;
+}
+#story{
   display: none;
-  border: 2px solid #e6df44;
-  padding: 30px;
+  /* border: 2px solid #e6df44; */
+  padding-top:30px;
 }
 #other {
   display: none;
@@ -45,8 +46,24 @@ body {
 }
 
 .survey {
-  display: show;
+  display: none;
   margin: 30px;
+}
+
+#ruby{
+  display: none;
+}
+
+#php{
+  display: none;
+}
+
+#java{
+  display: none;
+}
+
+#css {
+  display: none;
 }
 
 /* #formOne {

@@ -4,23 +4,23 @@ $(document).ready(function() {
       $(this).children("p").toggle();
   });
 
-  // (".bucket#btn").click(function() {
-  //     $(".bucket").hide();
-  //     $(".survey").show();
-  // });
-
+  $(".btn-success").click(function(){
+    $(".survey").show();
+    $(".bucket").hide();
+    $(this).remove();
+  });
 
   $("#formOne").submit(function(event) {
-    // var nameInput = $("input#name").val();
+    var nameInput = $("input#name").val();
     var challengeInput = parseInt($("#challenge").val());
     var cultureInput = parseInt($("#culture").val());
     var projectsInput = parseInt($("#projects").val());
     var locationInput = parseInt($("#location").val());
     var total = challengeInput+cultureInput+projectsInput+locationInput
-    var resultOne = "Ruby/Rails and PHP/Drupal"
-    var resultTwo = "PHP/Drupal and Java/Android"
-    var resultThree = "Java/Android and C#/.NET"
-    var resultFour = "CSS/Design and Ruby/Rails"
+    var resultOne = "Ruby/Rails"
+    var resultTwo = "PHP/Drupal"
+    var resultThree = "Java/Android"
+    var resultFour = "CSS/Design"
 
     // $(".name").append(nameInput);
     // $(".challenge").append(challengeInput);
@@ -38,18 +38,24 @@ $(document).ready(function() {
     } else if (total < 5) {
       $(".trackResult").append(resultOne);
       $("#story").show()
+      $("#ruby").show()
     } else if (total < 7) {
       $(".trackResult").append(resultTwo);
       $("#story").show()
+      $("#php").show()
     } else if (total < 10) {
       $(".trackResult").append(resultThree);
       $("#story").show()
+      $("#java").show()
     } else if (total > 10) {
       $(".trackResult").append(resultFour);
       $("#story").show()
+      $("#css").show()
     } else {
       //else what? //
     }
+    $(".name").append(nameInput);
+
 
     // $("#story").show();
     console.log(total)

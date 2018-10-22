@@ -10,9 +10,9 @@
   <body>
     <div class="container">
       <h1>What’s the Track for You?</h1>
-      <p>Click on boxes for more information!</p>
-      <!--click on link to see pop up of description for each and what it is used for.-->
       <div class="bucket">
+        <h6><em>Click the boxes for more information!</em></h6>
+        <!--click on link to see pop up of description for each and what it is used for.-->
         <div class="row">
           <div class="col-md-4">
             <div class="flash">
@@ -74,13 +74,12 @@
               </div>
             </div>
           </div>
-          <button type="button" class="btn btn-success">Take Survey</button>
         </div>
+
+        <button type="button" class="btn btn-success">Take a Survey!</button>
       </div>
 
       <div class="showSurvey">
-        <!-- <button type="button" class="takeSurvey" name="btn btn-info">Take Survey</button> -->
-
         <div class="survey">
           <h3>Would you like to take a survey to see which track which best fits you?</h3>
           <form id="formOne">
@@ -93,9 +92,9 @@
             <div class="form-group">
               <label for="challenge">Do you enjoy a challenge?</label>
               <select class="form-control" id="challenge">
-                <option value="1">Bring it On!</option>
+                <option value="1">I love a challenge!</option>
                 <option value="2">I don't have time for that..</option>
-                <option value="3">I like everyting medium difficulty</option>
+                <option value="3">I like everyting medium difficulty.</option>
               </select>
             </div>
 
@@ -133,11 +132,37 @@
       </div>
 
       <div id="story">
-        <p>Result <span class="trackResult"></span>,</p>
+        <p>Hi <span class="name"></span>! We think you'll really like the <span class="trackResult"></span> tracks!</p>
+        <p><em>See</em> below for more  <strong>information</strong>:</p>
+      </div>
+
+      <div id="ruby">
+        <ul>
+          <li><a href="https://www.ruby-lang.org/en/">Ruby Programming Language</a></li>
+        </ul>
+      </div>
+
+      <div id="php">
+        <ol>
+          <li><a href="http://www.php.net/">PHP: Hypertext Preprocessor</a></li>
+          <li></li>
+        </ol>
+      </div>
+
+      <div id="java">
+        <ul>
+          <li><a href="https://docs.oracle.com/javase/7/docs/technotes/guides/language/">Java Programing Language</a> </li>
+        </ul>
+      </div>
+
+      <div id="css">
+        <ul>
+          <li><a href="https://docs.oracle.com/javase/7/docs/technotes/guides/language/">CSS Design: BootStrap</a> </li>
+        </ul>
       </div>
 
       <div id="other">
-        <p>This may not be for you!</p>
+        <p>We don't think coding is for you!</p>
       </div>
     </div>
   </body>
