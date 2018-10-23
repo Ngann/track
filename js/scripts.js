@@ -57,6 +57,7 @@ $(document).ready(function() {
 
     $(".survey").hide();
     $(".name").append(nameInput);
+    $(".image").show();
 
 
     // $("#story").show();

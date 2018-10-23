@@ -70,6 +70,11 @@ body {
   display: none;
 }
 
+.image {
+  float:center;
+  display: none;
+}
+
 /* #formOne {
   display: none;
 } */
