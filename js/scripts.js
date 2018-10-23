@@ -36,19 +36,19 @@ $(document).ready(function() {
        // $(".trackResult").append("Sorry, we don't think you would enjoy a career in coding");
        $('#other').show();
     } else if (total < 5) {
-      $(".trackResult").append(resultOne);
+      $(".trackResult").text(resultOne);
       $("#story").show()
       $("#ruby").show()
     } else if (total < 7) {
-      $(".trackResult").append(resultTwo);
+      $(".trackResult").text(resultTwo);
       $("#story").show()
       $("#php").show()
     } else if (total < 10) {
-      $(".trackResult").append(resultThree);
+      $(".trackResult").text(resultThree);
       $("#story").show()
       $("#java").show()
-    } else if (total > 10) {
-      $(".trackResult").append(resultFour);
+    } else if (total > 11) {
+      $(".trackResult").text(resultFour);
       $("#story").show()
       $("#css").show()
     } else {
@@ -56,7 +56,7 @@ $(document).ready(function() {
     }
 
     $(".survey").hide();
-    $(".name").append(nameInput);
+    $(".name").text(nameInput);
     $(".image").show();
 
 
