@@ -52,8 +52,10 @@ $(document).ready(function() {
       $("#story").show()
       $("#css").show()
     } else {
-      //else what? //
+      alert("We think all tracks will be great for you!");
     }
+
+    $(".survey").hide();
     $(".name").append(nameInput);
 
 

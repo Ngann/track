@@ -50,6 +50,10 @@ body {
   margin: 30px;
 }
 
+.result {
+  margin:30px;
+}
+
 #ruby{
   display: none;
 }
